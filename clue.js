@@ -102,7 +102,7 @@ function pick_mistery() {
 }
 
 function reveal_mistery(result) {
-  console.log("Who did it?:\n", result[0], "\n\n" + "The weapon used was:\n", result[1], "\n\n" + "It took place in:\n", result[2]);
+  console.log("Who did it?:\n", result[0].first_name, result[0].last_name, "\n\n" + "The weapon used was:\n", result[1].name.charAt(0).toUpperCase() + result[1].name.slice(1), "\n\n" + "It took place in:\n", result[2].name);
 }
 
 reveal_mistery(pick_mistery());
